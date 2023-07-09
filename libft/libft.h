@@ -6,7 +6,7 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 16:00:52 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/09 18:52:08 by asenel           ###   ########.fr       */
+/*   Updated: 2023/07/09 20:02:16 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@
 # include <stdlib.h>
 # include <stddef.h>
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}				t_list;
 char	*ft_strdup(const char *str);
 void	*ft_calloc(size_t nitems, size_t size);
 int		ft_isalpha(int c);

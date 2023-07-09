@@ -6,7 +6,7 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 20:13:51 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/09 14:36:32 by asenel           ###   ########.tr       */
+/*   Updated: 2023/07/09 19:43:43 by asenel           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	c = 0;
+	if (dest == src || n == 0)
+		return (dest);
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
-	if (!d || (s == NULL && n > 0))
-		return (NULL);
+	c = 0;
 	while (c < n)
 	{
 		d[c] = s[c];
