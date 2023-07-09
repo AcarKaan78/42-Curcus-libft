@@ -6,7 +6,7 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 18:15:52 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/07 19:14:01 by asenel           ###   ########.fr       */
+/*   Updated: 2023/07/09 14:39:51 by asenel           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	int	a;
-	char ch = (char)c;
+	int		a;
+	char	ch;
 
+	ch = (char)c;
 	a = 0;
 	while (str[a] && str[a] != ch)
 		a++;
@@ -24,4 +25,3 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)&str[a]);
 	return (NULL);
 }
-

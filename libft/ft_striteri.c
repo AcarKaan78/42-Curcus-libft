@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/09 13:37:00 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/09 18:10:35 by asenel           ###   ########.tr       */
+/*   Created: 2023/07/09 18:12:43 by asenel            #+#    #+#             */
+/*   Updated: 2023/07/09 18:23:35 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t		size_s1;
+	int	c;
+	int	length;
 
-	if (!s1 || !set)
-		return (NULL);
-	while (ft_strchr(set, *s1) && *s1 != '\0')
-		s1++;
-	size_s1 = ft_strlen((char *)s1);
-	while (size_s1 != 0 && ft_strchr(set, s1[size_s1 - 1]))
-		size_s1--;
-	return (ft_substr((char *)s1, 0, size_s1));
+	length = ft_strlen(s);
+	c = 0;
+	if (!s)
+		return ;
+	while (c < length)
+	{
+		(*f)(c, &s[c]);
+		c++;
+	}
+	s[c] = '\0';
 }

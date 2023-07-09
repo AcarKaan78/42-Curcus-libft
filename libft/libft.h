@@ -6,7 +6,7 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 16:00:52 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/09 13:35:53 by asenel           ###   ########.fr       */
+/*   Updated: 2023/07/09 18:52:08 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,14 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len);
 int		ft_atoi(const char *str);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_itoa(int n);
+char	**ft_split(char const *s, char c);
 
 #endif
