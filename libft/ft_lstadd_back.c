@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 21:00:54 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/10 18:54:12 by asenel           ###   ########.fr       */
+/*   Created: 2023/07/10 16:38:33 by asenel            #+#    #+#             */
+/*   Updated: 2023/07/10 19:26:59 by asenel           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *to_find, size_t len)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t		position;
+	t_list	*list;
 
-	if (*to_find == '\0')
-		return ((char *)str);
-	position = ft_strlen((char *)to_find);
-	while (*str != '\0' && len-- >= position)
+	if (!lst || !new)
+		return ;
+	if (*lst == NULL)
+		*lst = new;
+	else
 	{
-		if (*str == *to_find && ft_memcmp(str, to_find, position) == 0)
-			return ((char *)str);
-		str++;
+		list = ft_lstlast(*lst);
+		list -> next = new;
 	}
-	return (NULL);
 }
