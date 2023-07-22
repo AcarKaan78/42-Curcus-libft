@@ -6,9 +6,10 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 21:18:32 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/07 15:48:50 by asenel           ###   ########.tr       */
+/*   Updated: 2023/07/15 11:56:31 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)

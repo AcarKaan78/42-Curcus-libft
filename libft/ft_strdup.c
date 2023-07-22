@@ -6,9 +6,10 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 14:43:04 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/07 15:12:02 by asenel           ###   ########.tr       */
+/*   Updated: 2023/07/15 11:56:37 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strdup(const char *str)

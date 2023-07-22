@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asenel <42istanbul.com.tr>                 +#+  +:+       +#+        */
+/*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 19:18:03 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/05 19:49:48 by asenel           ###   ########.tr       */
+/*   Updated: 2023/07/15 11:57:35 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asenel <42istanbul.com.tr>                 +#+  +:+       +#+        */
+/*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 20:03:02 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/04 20:07:27 by asenel           ###   ########.tr       */
+/*   Updated: 2023/07/15 11:57:15 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

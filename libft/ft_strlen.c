@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asenel <42istanbul.com.tr>                 +#+  +:+       +#+        */
+/*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 19:27:56 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/04 19:41:14 by asenel           ###   ########.tr       */
+/*   Updated: 2023/07/15 11:56:25 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlen(const char *str)
